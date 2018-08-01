@@ -1,43 +1,21 @@
-# nest-demo
-
-## Description
-
-This project will go through the essential skills for Nest Node JS framework
+# 1. Setup Nest Web Server and Websocket
 
 ## Check out tutorial
 ```
 git fetch
-git checkout <branch name>
+git checkout 1_setup_web_server_and_websocket
 ```
 
-## Installation
+## Documentation
 
+This is initialization of the endpoint
 ```bash
-$ npm install
+# Welcome endpoint
+open http://localhost:3000
 ```
 
-## Running the app
-
+and we got the websocket at port 8080, open client/index.html and browser developer panel will see the connection and response from websocket event `events`
 ```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-npm run start:prod
-```
-
-## Test
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
+# websocket port
+ws://localhost:8080
 ```
