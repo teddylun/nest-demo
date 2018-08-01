@@ -8,7 +8,6 @@ export class EventsGateway {
 
   @SubscribeMessage('events')
   onEvent(client, data: any): Observable<WsResponse<number>> {
-    console.log(data)
     const event = 'events'
     const response = [1, 2, 3]
     return from(response).pipe(map(res => ({ event, data: res })))

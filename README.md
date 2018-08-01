@@ -2,7 +2,13 @@
 
 ## Description
 
-The demo project of Nest 
+This project will go through the essential skills for Nest Node JS framework
+
+## Check out tutorial
+```
+git fetch
+git checkout <branch name>
+```
 
 ## Installation
 
@@ -35,4 +41,3 @@ $ npm run test:e2e
 # test coverage
 $ npm run test:cov
 ```
-
