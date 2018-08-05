@@ -7,11 +7,15 @@ import Config from '../configs'
 export class BitcoinsService {
   private readonly bitcoins: Bitcoin[] = []
 
+  create(bitcoin: Bitcoin) {
+    this.bitcoins.push(bitcoin)
+  }
+
   async list(limit: number | string): Promise<any> {
-    try {
-      return await axios.get(`${Config.coinMarketCapUrl}/?limit=${limit}`)
-    } catch (e) {
-      throw e
-    }
+    return await axios.get(`${Config.coinMarketCapUrl}/?limit=${limit}`)
+  }
+
+  async findOne(id: number) {
+    return await axios.get(`${Config.coinMarketCapUrl}/${id}`)
   }
 }
